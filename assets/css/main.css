@@ -1369,9 +1369,9 @@ body {
 .contact {
     position: fixed;
     top: 112px;
-    left: 254px;
-    width: 70%;
-    height: 70%;
+    left: 340px;
+    width: 65%;
+    height: 65%;
     background-image: url("../img/cincinnatiMap.JPG");
     background-position: center;
     background-size: cover;
