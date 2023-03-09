@@ -1367,51 +1367,58 @@ body {
     }
 }
 
-.contact {
-    position: fixed;
-    top: 112px;
-    left: 254px;
-    width: 70%;
-    height: 70%;
-    background-image: url("../img/cincinnatiMap.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat
-}
 
-.contact--lockup {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 900px;
-    height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    margin: 0 auto
-}
+/*
+ *When the screen width is 800px and up do the following
+ **/
+@media (min-width: 800px) {
 
-@media (max-width: 1180px) {
+    .contact {
+        position: fixed;
+        top: 112px;
+        left: 254px;
+        width: 70%;
+        height: 70%;
+        background-image: url("../img/cincinnatiMap.JPG");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
     .contact--lockup {
-        max-width: 90%
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 900px;
+        height: 100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin: 0 auto
     }
 }
 
-@media (max-width: 767px) {
+
+/*
+ *When the screen width is between 350px and 600px then do the following
+ **/
+ @media (max-width: 600px) and (min-width: 350px) {
     .contact--lockup {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center
+        padding-top: 50%;
+        -webkit-box-pack: left;
+        -webkit-justify-content: left;
+        -ms-flex-pack: left;
+        justify-content: left
     }
 }
+
 
 .contact--lockup .modal {
     padding: 45px 45px;
