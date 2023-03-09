@@ -34,15 +34,15 @@
 
 //   });
 
-fetch("https://ipapi.co/json/")
-    .then(response=>response.json())
-    .then((responseJson=>{
-        console.log(responseJson)
-        console.log("IP: "+ responseJson.ip)
-        console.log("City: "+ responseJson.city)
-        console.log("Lat: "+ responseJson.latitude)
-        console.log("Long: "+ responseJson.longitude)
-    }))
+// fetch("https://ipapi.co/json/")
+//     .then(response=>response.json())
+//     .then((responseJson=>{
+//         console.log(responseJson)
+//         console.log("IP: "+ responseJson.ip)
+//         console.log("City: "+ responseJson.city)
+//         console.log("Lat: "+ responseJson.latitude)
+//         console.log("Long: "+ responseJson.longitude)
+//     }))
 
 //   $('.side-nav li, .outer-nav li').click(function(){
 
@@ -289,29 +289,29 @@ fetch("https://ipapi.co/json/")
 
 // });
 
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-console.log(location.href);
+// document.getElementById("demo").innerHTML = "Hello JavaScript!";
+// console.log(location.href);
 
 
 
-//if they allow
-const successCallback = (position) => {
-  console.log(position);
-};
+// //if they allow
+// const successCallback = (position) => {
+//   console.log(position);
+// };
 
-const errorCallback = (error) => {
-  console.log(error);
-};
+// const errorCallback = (error) => {
+//   console.log(error);
+// };
 
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+// navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
-//if not use this
-fetch("https://ipapi.co/json/")
-.then(response=>response.json())
-.then((responseJson=>{
-    console.log(responseJson)
-    console.log("IP: "+ responseJson.ip)
-    console.log("City: "+ responseJson.city)
-    console.log("Lat: "+ responseJson.latitude)
-    console.log("Long: "+ responseJson.longitude)
-}))
+// //if not use this
+// fetch("https://ipapi.co/json/")
+// .then(response=>response.json())
+// .then((responseJson=>{
+//     console.log(responseJson)
+//     console.log("IP: "+ responseJson.ip)
+//     console.log("City: "+ responseJson.city)
+//     console.log("Lat: "+ responseJson.latitude)
+//     console.log("Long: "+ responseJson.longitude)
+// }))
